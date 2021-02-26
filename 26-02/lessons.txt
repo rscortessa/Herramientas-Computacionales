@@ -1,1 +1,4 @@
 ./ "Me indica donde esta el ejecutable"
+# Se puede cambiar el nombre del ejecutable:
+g++ {filename}.cpp -o {executable name}
+
