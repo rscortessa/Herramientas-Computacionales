@@ -1,4 +1,4 @@
-* .cpp~
-* .replit
-* .out
-* .x
+*.cpp~
+*.replit
+*.out
+*.x
