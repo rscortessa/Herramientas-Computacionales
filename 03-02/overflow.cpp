@@ -3,6 +3,7 @@
 #include<string>
 void overflow(float x);
 void overflowint(int x);
+void print(float x);
 
 int main()
 {
@@ -34,6 +35,8 @@ void overflow(float x)
     {
       m=x;
       x*=2;
+      print(x);
+
     }
   std::cout<<"This is the largest float="<<m<<"\n";
   x=1;
@@ -42,6 +45,8 @@ void overflow(float x)
     {
       m=x;
       x/=2;
+      print(x);
+
     }
   std::cout<<"This is the lowest float="<<m<<"\n";
 }
@@ -54,6 +59,8 @@ void overflowint(int x)
     {
       m=x;
       x*=2;
+      print(x);
+
     }
   std::cout<<"This is the largest int="<<m<<"\n";
   x=1;
@@ -62,6 +69,12 @@ void overflowint(int x)
     {
       m=x;
       x/=2;
+      print(x);
     }
   std::cout<<"This is the lowest int="<<m<<"\n";
+}
+void print(float x)
+{
+  std::cout<<"x="<<x<<"\n";
+
 }

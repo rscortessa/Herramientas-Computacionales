@@ -1,0 +1,40 @@
+\documentclass[]{article}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+\maketitle
+\section{Clase}
+trucos $3/2$ $\rightarrow$ dejarlo asi, si\part{title} lo escribo como $1.50000$ pierde precisión.
+
+
+Standard $IEEE754$ permite obtener mismos resultados y mismos errores.
+
+
+Notación de punto flotante:
+Escribir algo de manera científica con potencia 2, (insertar definición)
+\begin{equation}
+x_{float}=(-1)^{s}xmantissax2^{expfld-bias}
+\end{equation}
+Para una representación de 32 bits, 1 para el signo, 8 para el exponente quedan 23 para la mantissa.
+
+
+Precisión $10^{-7}$ mas bajo de ese rango, no se pueden distinguir los números.
+
+Densidad de números entre -1 y 1 es el $50\%$ de los números totales.
+
+Overflow $\rightarrow$ intentar representar números mas alla de la capacidad.
+Underflow $\rightarrow$ Intentar representar números demasiado pequeño, lo trunca a cero.
+Truncamiento el número a representar no esta definido y el computador lo representa en el siguiente número posible.
+
+Objetivo disminuir truncamiento.
+
+En el computador no se preservana lgunas propiedades matemáticas:
+\begin{enumerate}
+	\item Asociatividad
+	\item Conmutatividad
+\end{enumerate}
+
+\end{document}
