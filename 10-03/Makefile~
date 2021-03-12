@@ -1,0 +1,9 @@
+all:datos.txt
+
+updown.x : updown.cpp
+	g++ updown.cpp -o updown.x
+datos.txt: updown.x
+	./updown.x 10 > datos.txt
+
+clean:
+	rm -f datos.txt updwon.x
