@@ -1,0 +1,8 @@
+Pagina de librerias estandar:
+https://en.cppreference.com/w/
+* strings
+* vectors
+* mapas
+* listas
+* Se puede hacer computación en paralelo "parallel_policy"
+* alternativa a printf: fmtlib
