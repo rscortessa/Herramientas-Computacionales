@@ -1,0 +1,10 @@
+set style data linespoints
+set logscale x 2
+set xlabel "Número de procesos"; set ylabel "tiempo"
+set key left top
+set term pdf
+show style data
+set out "tiempo.pdf"
+set title "tiempo vs procesos"
+show bars
+plot "f.txt" u 1:(3)

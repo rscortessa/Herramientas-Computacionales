@@ -1,0 +1,9 @@
+#include<random>
+#include "mpi.h"
+int main ()
+{
+ MPI_Init(&argc, &argv); /*Mandatory*/
+
+  MPI_Finalize();       /*Mandatory*/
+  return 0;
+}
