@@ -42,7 +42,7 @@ int main (int argc, char **argv)
     MPI_Reduce(&T, &Ttotal, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
     if(0==processId && P!=1.0){ /* Master */
       sum=4*sum/N;
-      std::cout<<sum<<"\t"<<Ttotal/(P)<<"\t"<<Ttotal/(P*np)<<"\t"<<np<<std::endl;
+      std::cout<<sum<<"\t"<<(P)/Ttotal<<"\t"<<P/(Ttotal*np)<<"\t"<<np<<std::endl;
     }
     else{
       if(0==processId)
